@@ -1,0 +1,7 @@
+5ee5eb65a3742d4eb1f2cb28a58f6069  usr/bin/ra_splash
+6f7278b9230ccdc59a4a325027ea78e5  usr/lib/x86_64-linux-gnu/libretro/sh-launcher.shlib
+546e90711382de4970be98fc2d239e6a  usr/lib/x86_64-linux-gnu/libretro/sh_launcher_libretro.so
+a9cfafb417d1737ffe3cd033ed1e4d31  usr/share/doc/libretro-sh-launcher/changelog.Debian.gz
+a024ed6609986d43359052129c30d9c3  usr/share/doc/libretro-sh-launcher/copyright
+508707f96599c61a75cf2feb338fb2e6  usr/share/libretro/assets/xmb/monochrome/png/generic_art.png
+c80defae65763f3581e77edc470a00f7  usr/share/libretro/info/sh_launcher_libretro.info

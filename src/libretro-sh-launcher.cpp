@@ -1,9 +1,30 @@
+/*
+ * Original code by Rob Loach (http://robloach.net)
+ * Almost fully rewriten by me (Volk_Milit), only usage
+ * libretro.h api, so...
+ * */
+
+/*
+    Libretro Sh Launcher - allow you to launch (ba)sh scripts throught Retroarch.
+    Copyright (C) 2018 Volk_Milit (aka Ja'Virr-Dar)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 #include <iostream>
 #include <cstdarg>
-
-#include <sys/types.h>
 #include <sys/wait.h>
-#include <unistd.h>
 
 #include "playlist_generator.h"
 #include "libretro.h"
@@ -151,24 +172,30 @@ bool retro_load_game(const struct retro_game_info *info)
 		
 		if ((pid = fork()) < 0)
 		{
-			perror("Can't fork process.\n");
+			std::cout << "Failed to fork()" << std::endl;
 			return -1;
 		}
 		else if (pid == 0)
 		{
 			if (execlp("/bin/sh", "/bin/sh", "-c", info->path, (char*)NULL) == -1)
 			{
+				std::cout << "Failed to launch " << info->path << std::endl;
                 libretro.log_cb(RETRO_LOG_INFO, "Failed to launch %s.\n", info->path);
 				return -1;
 			}
 		}
+	}
+	else
+	{
+		std::cout << "No content to load." << std::endl;
+		return -1;
 	}
 	
 	do
 	{
 		ret = waitpid(pid, &status, 0);
 		/*
-		 * Let me explain something. Actually waitpid return -1 here, but retroarch doesn't launch if get -1.
+		 * Let me explain this. Actually waitpid return -1 here, but retroarch doesn't launch if get -1.
 		 * So after an hour of debugging I just don't add error handling. And everything works now.
 		 * */
 	} while (ret == pid);

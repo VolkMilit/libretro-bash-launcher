@@ -1,7 +1,7 @@
-# libretro-sh-launcher
-Based on [libretro-dolphin-launcher](https://github.com/RobLoach/libretro-dolphin-launcher).
+### Note: this is only mirror. The project is now [here](https://gitlab.com/VolkMilit/libretro-sh-launcher)
 
-Fork of [libretro-bash-launcher](https://github.com/SwedishGojira/libretro-bash-launcher), see full list of changes below.
+# libretro-sh-launcher
+Based on [libretro-dolphin-launcher](https://github.com/RobLoach/libretro-dolphin-launcher) and [libretro-bash-launcher](https://github.com/SwedishGojira/libretro-bash-launcher), see full list of changes below.
 
 Launch (ba)sh-scripts directly from [RetroArch](http://www.libretro.com/) to launch your Linux games.
 
@@ -25,6 +25,10 @@ Launch (ba)sh-scripts directly from [RetroArch](http://www.libretro.com/) to lau
 - compiller with c++14 support
 - retroarch
 
+Optional:
+
+- Qt4
+
 #### Manual
 
 1. Compile the core
@@ -34,10 +38,12 @@ Launch (ba)sh-scripts directly from [RetroArch](http://www.libretro.com/) to lau
   cd libretro-sh-launcher
   mkdir build && cd build
   cmake ..
+  # optional use -DSPLASH=OFF option to disable compile splash programm, see USAGE.md#splash
   make -j$(nproc)
   ```
 
 2. Copy assets and core in right directoryes
+
   ``` bash
   mkdir $HOME/.config/retroarch/xmb/monochrome/png
   cp ../assets/xmb/monochrome/png/* $HOME/.config/retroarch/xmb/monochrome/png
@@ -87,3 +93,11 @@ See [usage](USAGE.md)
 - [SwedishGojira](http://github.com/swedishgojira)
 - [Rob Loach](http://github.com/robloach)
 - [Alcaro](https://github.com/Alcaro)
+
+## License
+
+- Libretro Sh Launcher (c) Volk_Milit, GPL v3.0.
+- Splash (c) Volk_Milit, GPL v3.0.
+- HTTPDownloader.cpp (c) Uli Köhler, CC0 1.0 Universal (public domain).
+- libretro.h (c) The RetroArch team, MIT.
+

@@ -1,0 +1,8 @@
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/install/strip.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/install/local.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/ra_splash.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/install.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/list_install_components.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/sh_launcher_libretro.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/edit_cache.dir
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/rebuild_cache.dir

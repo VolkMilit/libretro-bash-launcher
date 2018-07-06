@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+	# icons
+	ln -s /usr/share/libretro/assets/xmb/monochrome/png/default.png "/usr/share/libretro/assets/xmb/monochrome/png/Bash - Sh Launcher - PC.png"
+	ln -s /usr/share/libretro/assets/xmb/monochrome/png/core.png "/usr/share/libretro/assets/xmb/monochrome/png/Bash - Sh Launcher - PC-content.png"
+	ln -s /usr/share/libretro/assets/xmb/pixel/png/default.png "/usr/share/libretro/assets/xmb/pixel/png/Bash - Sh Launcher - PC.png"
+	ln -s /usr/share/libretro/assets/xmb/pixel/png/core.png "/usr/share/libretro/assets/xmb/pixel/png/Bash - Sh Launcher - PC-content.png"
+	ln -s /usr/share/libretro/assets/xmb/retroactive/png/default.png "/usr/share/libretro/assets/xmb/retroactive/png/Bash - Sh Launcher - PC.png"
+	ln -s /usr/share/libretro/assets/xmb/retroactive/png/default-content.png "/usr/share/libretro/assets/xmb/retroactive/png/Bash - Sh Launcher - PC-content.png"
+	ln -s /usr/share/libretro/assets/xmb/retroactive_marked/png/default.png "/usr/share/libretro/assets/xmb/retroactive_marked/png/Bash - Sh Launcher - PC.png"
+	ln -s /usr/share/libretro/assets/xmb/retroactive_marked/png/default-content.png "/usr/share/libretro/assets/xmb/retroactive_marked/png/Bash - Sh Launcher - PC-content.png"
+	ln -s /usr/share/libretro/assets/xmb/flatui/png/default.png "/usr/share/libretro/assets/xmb/flatui/png/Bash - Sh Launcher - PC.png"
+	ln -s /usr/share/libretro/assets/xmb/flatui/png/core.png "/usr/share/libretro/assets/xmb/flatui/png/Bash - Sh Launcher - PC-content.png"
+        
+	# wallpapers
+	ln -s "/usr/share/libretro/assets/wallpapers/bichromatic pads/1440x900/Magnavox - Odyssey2.png" "/usr/share/libretro/assets/wallpapers/bichromatic pads/1440x900/Bash - Sh Launcher - PC.png"
+	ln -s "/usr/share/libretro/assets/wallpapers/emulationstation blured/1280x720/Sony - PlayStation 2.png" "/usr/share/libretro/assets/wallpapers/emulationstation blured/1280x720/Bash - Sh Launcher - PC.png"
+	ln -s "/usr/share/libretro/assets/wallpapers/posterized consoles/1440x900/DOS.png" "/usr/share/libretro/assets/wallpapers/posterized consoles/1440x900/Bash - Sh Launcher - PC.png"
+fi
+
+exit 0

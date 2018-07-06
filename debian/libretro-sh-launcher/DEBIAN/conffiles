@@ -1,0 +1,2 @@
+/etc/udev/rules.d/999-retroarch.sh
+/etc/udev/rules.d/999-run-retroarch.rules

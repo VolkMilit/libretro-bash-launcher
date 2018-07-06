@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -O2   CMakeFiles/ra_splash.dir/apps/splash/main.cpp.o  -o ra_splash -rdynamic -lQtOpenGL -lQtGui -lQtCore 

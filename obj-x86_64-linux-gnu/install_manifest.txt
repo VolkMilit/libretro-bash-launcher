@@ -1,0 +1,7 @@
+/usr/bin/ra_splash
+/usr/lib/x86_64-linux-gnu/libretro/sh_launcher_libretro.so
+/usr/lib/x86_64-linux-gnu/libretro/sh-launcher.shlib
+/usr/share/libretro/assets/xmb/monochrome/png/generic_art.png
+/etc/udev/rules.d/999-retroarch.sh
+/etc/udev/rules.d/999-run-retroarch.rules
+/usr/share/libretro/info/sh_launcher_libretro.info

@@ -4,10 +4,10 @@ Version: 1.0.0-1+stretch
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Volk_Milit (aka Ja'Virr-Dar) <javirrdar@gmail.com>
-Installed-Size: 21
+Installed-Size: 453
 Depends: libretro-sh-launcher (= 1.0.0-1+stretch)
 Section: debug
 Priority: extra
 Homepage: https://github.com/VolkMilit/libretro-sh-launcher
 Description: Debug symbols for libretro-sh-launcher
-Build-Ids: fa2bd66cb2483af94056c3e7ac7f5fe5668cdf4d
+Build-Ids: 0ce9649e879cd4bca3532332138290ecb54abfd9 c44b910a155ba3f9724e7f8897458e0f0782a9af

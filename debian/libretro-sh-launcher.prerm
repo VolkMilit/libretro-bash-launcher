@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+	# icons
+	rm -f "/usr/share/libretro/assets/xmb/monochrome/png/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/xmb/monochrome/png/Bash - Sh Launcher - PC-content.png"
+	rm -f "/usr/share/libretro/assets/xmb/pixel/png/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/xmb/pixel/png/Bash - Sh Launcher - PC-content.png"
+	rm -f "/usr/share/libretro/assets/xmb/retroactive/png/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/xmb/retroactive/png/Bash - Sh Launcher - PC-content.png"
+	rm -f "/usr/share/libretro/assets/xmb/retroactive_marked/png/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/xmb/retroactive_marked/png/Bash - Sh Launcher - PC-content.png"
+	rm -f "/usr/share/libretro/assets/xmb/flatui/png/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/xmb/flatui/png/Bash - Sh Launcher - PC-content.png"
+        
+	# wallpapers
+	rm -f "/usr/share/libretro/assets/wallpapers/bichromatic pads/1440x900/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/wallpapers/emulationstation blured/1280x720/Bash - Sh Launcher - PC.png"
+	rm -f "/usr/share/libretro/assets/wallpapers/posterized consoles/1440x900/Bash - Sh Launcher - PC.png"
+fi
+
+exit 0
+

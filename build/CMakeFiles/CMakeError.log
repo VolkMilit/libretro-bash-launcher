@@ -1,0 +1,99 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f6a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f6a6.dir/build.make CMakeFiles/cmTC_5f6a6.dir/build
+make[1]: вход в каталог «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_5f6a6.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_5f6a6.dir/CheckSymbolExists.cxx.o -c /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+CMakeFiles/cmTC_5f6a6.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_5f6a6.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_5f6a6.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_5f6a6/fast»
+make: *** [cmTC_5f6a6/fast] Ошибка 2
+
+File /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2594/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2594.dir/build.make CMakeFiles/cmTC_b2594.dir/build
+make[1]: вход в каталог «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_b2594.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_b2594.dir/CheckSymbolExists.cxx.o -c /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+CMakeFiles/cmTC_b2594.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_b2594.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_b2594.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_b2594/fast»
+make: *** [cmTC_b2594/fast] Ошибка 2
+
+File /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc94c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc94c.dir/build.make CMakeFiles/cmTC_dc94c.dir/build
+make[1]: вход в каталог «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_dc94c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4   -o CMakeFiles/cmTC_dc94c.dir/CheckSymbolExists.cxx.o -c /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+CMakeFiles/cmTC_dc94c.dir/build.make:65: ошибка выполнения рецепта для цели «CMakeFiles/cmTC_dc94c.dir/CheckSymbolExists.cxx.o»
+make[1]: *** [CMakeFiles/cmTC_dc94c.dir/CheckSymbolExists.cxx.o] Ошибка 1
+make[1]: выход из каталога «/home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp»
+Makefile:126: ошибка выполнения рецепта для цели «cmTC_dc94c/fast»
+make: *** [cmTC_dc94c/fast] Ошибка 2
+
+File /home/volk/Projects/libretro-sh-launcher/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
